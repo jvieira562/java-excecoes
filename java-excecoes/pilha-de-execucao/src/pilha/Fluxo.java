@@ -12,11 +12,11 @@ public class Fluxo {
 		} catch (NullPointerException | ArithmeticException ex) {
 
 			System.out.println("\nException --> " + ex.getMessage() + "\n");
-
+ 
 		}
-		System.out.println("Fim do main");
-
-	}
+		System.out.println("Fim do main"); 
+    
+	} 
 
 	private static void metodo1() {
 		System.out.println("Inicio do metodo1");
