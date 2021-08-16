@@ -5,7 +5,15 @@ public class Fluxo {
 	public static void main(String[] args) {
 
 		System.out.println("Inicio do main");
-		metodo1();
+		
+		try {
+			metodo1();
+
+		} catch (NullPointerException | ArithmeticException ex) {
+
+			System.out.println("\nException --> " + ex.getMessage() + "\n");
+
+		}
 		System.out.println("Fim do main");
 
 	}
@@ -19,18 +27,12 @@ public class Fluxo {
 	private static void metodo2() {
 		System.out.println("Inicio do metodo2");
 
-		try {
+//		ArithmeticException exception =  new ArithmeticException("Deu ruim!");
+//		Lançando exceção e passando mensagem "Deu ruim!" para o construtor .
+//		throw exception;  
+		throw new ArithmeticException("Deu ruim!");
 
-			for (int i = 1; i <= 5; i++) {
-				System.out.print(i + " ");
-			}
+//		System.out.println("\nFim do metodo2");
 
-			System.out.println("\nFim do metodo2");
-			int excecao = 2 / 0;
-
-		} catch (Exception e) {
-
-			System.out.println("--> ArithmeticException <--");
-		}
 	}
 }
