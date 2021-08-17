@@ -21,7 +21,7 @@ public class Fluxo {
 		System.out.println("Inicio do metodo1");
 		metodo2();
 		System.out.println("Fim do metodo1");
-	}
+	} 
 
 	private static void metodo2() {
 		System.out.println("Inicio do metodo2");
